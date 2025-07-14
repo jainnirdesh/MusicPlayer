@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "http-server -c-1 -p 8000",
-    "build": "echo 'Static site - no build needed'",
+    "build": "exit 0",
     "dev": "live-server --port=8000 --open=index.html",
     "deploy": "echo 'Deploy root directory to hosting platform'",
     "test": "echo 'No tests specified'"
