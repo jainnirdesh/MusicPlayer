@@ -3,23 +3,13 @@
 # Build script for Music Player
 echo "Building Music Player..."
 
-# Create public directory if it doesn't exist
-mkdir -p public
-
-# Copy main files to public directory
-cp index.html public/
-cp styles.css public/
-cp script.js public/
-cp sw.js public/
-
-# Create assets directory in public
-mkdir -p public/assets
-
-echo "Build completed successfully!"
-echo "Files copied to public directory:"
-echo "- index.html"
-echo "- styles.css"
-echo "- script.js"
-echo "- sw.js"
+# Files are already in root directory for deployment
+echo "Static files ready for deployment:"
+echo "- index.html ✓"
+echo "- styles.css ✓"
+echo "- script.js ✓"
+echo "- sw.js ✓"
+echo "- vercel.json ✓"
 echo ""
-echo "Deploy the 'public' directory to your hosting platform."
+echo "Project ready for deployment!"
+echo "Files are in root directory - no build needed."

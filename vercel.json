@@ -1,16 +1,12 @@
 {
   "version": 2,
-  "public": true,
-  "builds": [
+  "name": "modern-music-player",
+  "functions": {},
+  "trailingSlash": false,
+  "rewrites": [
     {
-      "src": "public/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "public/$1"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
