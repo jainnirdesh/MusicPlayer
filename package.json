@@ -4,10 +4,10 @@
   "description": "A modern, responsive web music player built with HTML5, CSS3, and JavaScript",
   "main": "index.html",
   "scripts": {
-    "start": "http-server -c-1 -p 8000",
-    "build": "echo 'Static site - no build needed'",
-    "dev": "live-server --port=8000 --open=index.html",
-    "deploy": "echo 'Files ready for deployment'",
+    "start": "http-server public -c-1 -p 8000",
+    "build": "mkdir -p public && cp index.html styles.css script.js sw.js public/",
+    "dev": "live-server --port=8000 --open=public/index.html",
+    "deploy": "npm run build && echo 'Files copied to public directory'",
     "test": "echo 'No tests specified'"
   },
   "repository": {
