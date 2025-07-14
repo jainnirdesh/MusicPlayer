@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "http-server -c-1 -p 8000",
-    "build": "exit 0",
+    "build": "mkdir -p public && cp index.html styles.css script.js sw.js public/",
     "dev": "live-server --port=8000 --open=index.html",
     "deploy": "echo 'Deploy root directory to hosting platform'",
     "test": "echo 'No tests specified'"
