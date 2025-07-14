@@ -56,29 +56,29 @@ cp index.html styles.css script.js sw.js public/
 3. Branch: main
 4. Folder: `/public`
 
-### File Structure After Build
+### File Structure After Cleanup
 ```
 MusicPlayer/
-├── public/              # Deploy this directory
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   ├── sw.js
-│   └── assets/
+├── public/              # ← Deploy this directory
+│   ├── index.html       # Main HTML file
+│   ├── styles.css       # CSS styles
+│   ├── script.js        # JavaScript functionality
+│   ├── sw.js           # Service Worker
+│   └── .gitignore      # Git ignore for public
 ├── vercel.json          # Vercel configuration
 ├── netlify.toml         # Netlify configuration
-├── build.sh            # Build script
-└── package.json        # Project configuration
+├── package.json         # Project configuration
+└── documentation files  # README, docs, etc.
 ```
 
 ### Testing Deployment Locally
 ```bash
 # Test the public directory
+npm start
+
+# Or directly
 cd public
 python3 -m http.server 8000
-
-# Or use npm
-npm start
 ```
 
 ### Common Platform Settings
