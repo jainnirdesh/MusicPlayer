@@ -2,12 +2,12 @@
   "name": "modern-music-player",
   "version": "1.0.0",
   "description": "A modern, responsive web music player built with HTML5, CSS3, and JavaScript",
-  "main": "public/index.html",
+  "main": "index.html",
   "scripts": {
-    "start": "http-server public -c-1 -p 8000",
-    "build": "echo 'Files already in public directory - no build needed'",
-    "dev": "live-server --port=8000 --open=public/index.html",
-    "deploy": "echo 'Deploy the public directory to your hosting platform'",
+    "start": "http-server -c-1 -p 8000",
+    "build": "echo 'Static site - no build needed'",
+    "dev": "live-server --port=8000 --open=index.html",
+    "deploy": "echo 'Deploy root directory to hosting platform'",
     "test": "echo 'No tests specified'"
   },
   "repository": {
